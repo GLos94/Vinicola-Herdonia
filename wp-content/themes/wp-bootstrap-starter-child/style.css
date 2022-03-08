@@ -1,0 +1,955 @@
+/*
+Theme Name: 	WP Bootstrap Starter Child Theme
+Theme URI: 		https://defstudio.it
+Description:    Tema Child per il tema WP Bootstrap Starter
+Author:         Giulia
+Author URI:     https://www.studiocasaortanova.it/
+Template:       wp-bootstrap-starter
+Version:        1.2
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    /*font-family: 'Roboto', sans-serif;*/
+    /* font-family: 'Poppins', sans-serif;
+     font-family: 'Nunito', sans-serif;*/
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+
+
+}
+
+
+.polaroid {
+    font-family: 'Itim', cursive;
+    font-size: 1.1rem;
+}
+
+
+header#masthead {
+    background: #ffffff;
+
+}
+
+#masthead .container {
+    max-width: 1440px !important;
+}
+
+#masthead .navbar-nav > li > a.nav-link {
+    color: #760909 !important;
+    font-size: 22px !important;
+    font-weight: 600 !important;
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+}
+
+#masthead .navbar-nav > li > a.nav-link:hover {
+    font-weight: 700 !important;
+}
+
+#masthead .navbar-nav > li.current-menu-item > a.nav-link {
+    color: #C33809 !important;
+    border-bottom: 1px solid #C33809 !important;
+}
+
+#content {
+    min-height: calc(100vh - 200px);
+}
+
+
+/* Home */
+
+.top-centered {
+    min-width: 100%;
+    font-weight: bold;
+    position: absolute;
+    top: 40%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.top-centered h1 {
+    font-family: "Roboto Condensed";
+    font-size: 64px;
+
+}
+
+.top-centered h2 {
+    color: #B77715;
+}
+
+
+.centered {
+    min-width: 100%;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.carousel-item.active {
+    background-image: url(images/banner-3.png);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+
+
+.row_introduction img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: top;
+    /* filter: brightness(0.8);*/
+}
+
+.row_summary .bg-storia {
+    background-image: url(images/kyathos.png);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+}
+
+
+.row_summary .bg-vigneti {
+    background-image: url(images/vigneti-3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+}
+
+.row_summary .bg-produzione {
+    background-image: url(images/vendemmia.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+}
+
+.row_summary .bg-vini {
+    background-image: url(images/tappi.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+}
+
+.bg-storia .centered {
+    top: 70%;
+    left: 55%;
+}
+
+.bg-vigneti .centered {
+    top: 70%;
+    left: 55%;
+}
+
+.bg-produzione .centered {
+    top: 70%;
+    left: 55%;
+}
+
+.bg-vini .centered {
+    top: 70%;
+    left: 55%;
+}
+
+.bg-storia:hover {
+    filter: opacity(0.8);
+}
+
+.bg-vigneti:hover {
+    filter: opacity(0.8);
+}
+
+.bg-produzione:hover {
+    filter: opacity(0.8);
+}
+
+.bg-vini:hover {
+    filter: opacity(0.8);
+}
+
+.centered h2 {
+    color: #ffffff;
+    font-size: 45px;
+    letter-spacing: 0.2px;
+    font-weight: 600;
+}
+
+.row_lista-vini {
+    border-bottom-style: dashed;
+}
+
+.vini-bianchi h4 {
+    font-weight: 500;
+    font-size: 45px;
+    font-family: "Barlow Condensed";
+    color: #333333;
+    text-align: start;
+}
+
+.vini-bianchi ul {
+    margin-left: -30px;
+    margin-top: 50px;
+}
+
+.vini-bianchi li {
+    position: relative;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: "Open Sans";
+    color: #333333;
+    text-align: start;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.vini-bianchi li:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    margin-left: -45px;
+    margin-top: 12px;
+    width: 35px;
+    height: 2px;
+    background-color: #B77715;
+}
+
+.vini-rossi h4 {
+    font-weight: 500;
+    font-size: 45px;
+    font-family: "Barlow Condensed";
+    color: #333333;
+    text-align: end;
+}
+
+.vini-rossi ul {
+    margin-top: 50px;
+}
+
+
+.vini-rossi li {
+    position: relative;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: "Open Sans";
+    color: #333333;
+    text-align: end;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.vini-rossi li:before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    margin-right: -45px;
+    margin-top: 12px;
+    width: 35px;
+    height: 2px;
+    background-color: #B77715;
+}
+
+.vini-rosati h4 {
+    font-weight: 500;
+    font-size: 45px;
+    font-family: "Barlow Condensed";
+    color: #333333;
+    text-align: end;
+}
+
+.vini-rosati ul {
+    margin-top: 50px;
+}
+
+.vini-rosati li {
+    position: relative;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: "Open Sans";
+    color: #333333;
+    text-align: end;
+    list-style: none;
+}
+
+.vini-rosati li:before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    margin-right: -45px;
+    margin-top: 12px;
+    width: 35px;
+    height: 2px;
+    background-color: #B77715;
+}
+
+
+.home_title h1 {
+    position: relative;
+    white-space: pre-line;
+    font-size: 5rem;
+    font-family: 'Barlow Semi Condensed', cursive;;
+    font-weight: bold;
+    color: #A50034;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 8px rgba(0, 0, 0, 0.25);
+}
+
+.home_title h3 {
+    position: relative;
+    white-space: pre-line;
+    font-size: 3rem;
+    font-family: 'Barlow Semi Condensed', cursive;
+    color: #f3f3f3;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 8px rgba(0, 0, 0, 0.25);
+}
+
+
+.img-circle {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.flip-card {
+    background-color: transparent;
+
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+
+}
+
+/* Style the back side */
+.flip-card-back {
+
+    transform: rotateY(180deg);
+}
+
+/* chi siamo */
+
+.header_storia {
+
+}
+
+.header_storia img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    filter: brightness(0.6);
+
+}
+
+.header_storia h1 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 62px;
+    text-align: center;
+    line-height: 1;
+    z-index: 10;
+}
+
+
+.header_storia small {
+    color: wheat;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+
+.row-storia h1 {
+    position: relative;
+    color: #b77715;
+    margin-left: 65px;
+}
+
+.row-storia h4 {
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.row-storia h1:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    margin-left: -55px;
+    margin-top: 25px;
+    width: 35px;
+    height: 2px;
+    background-color: #B77715;
+}
+
+.row-storia p {
+    margin-left: 20px;
+}
+
+
+.row-vigneti h1 {
+    position: relative;
+    color: #b77715;
+    margin-left: 20px;
+}
+
+.row-vigneti h1:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    margin-left: -55px;
+    margin-top: 25px;
+    width: 35px;
+    height: 2px;
+    background-color: #B77715;
+}
+
+
+.row-produzione h1 {
+    position: relative;
+    color: #b77715;
+    margin-left: 65px;
+}
+
+.row-produzione h1:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    margin-left: -55px;
+    margin-top: 25px;
+    width: 35px;
+    height: 2px;
+    background-color: #B77715;
+}
+
+.row-produzione p {
+    margin-left: 20px;
+}
+
+/* vini */
+
+.header_vini {
+    /*background-color: #C33809;*/
+}
+
+.header_vini img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    filter: brightness(0.5);
+    /*  opacity: 0.2;*/
+}
+
+.header_vini h1 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 62px;
+    text-align: center;
+    line-height: 1;
+    z-index: 10;
+}
+
+.header_vini small {
+    color: wheat;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+
+/* degustazioni */
+
+.header_home img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.header_home h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 62px;
+    line-height: 1;
+}
+
+.header_home small {
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+
+.header_degustazioni img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    filter: brightness(0.6);
+
+}
+
+.header_degustazioni h1 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 62px;
+    text-align: center;
+    line-height: 1;
+}
+
+
+.header_degustazioni small {
+    color: wheat;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+
+/* contatti */
+
+
+.header_contatti {
+
+}
+
+
+.header_contatti img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.header_contatti h1 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 62px;
+    text-align: center;
+    line-height: 1;
+}
+
+
+.header_contatti small {
+    color: wheat;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+
+.help h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #101943;
+}
+
+.help p {
+    white-space: pre-line;
+    font-size: 19px;
+}
+
+.vieni_in_agenzia h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #101943;
+}
+
+.vieni_in_agenzia p {
+    font-size: 19px;
+}
+
+.google_map_contatti iframe {
+    width: 100%;
+    height: 640px;
+    border-radius: 0 30px 30px 0;
+}
+
+.info_contatti, .info_orari {
+    font-size: 18px;
+}
+
+.google_map iframe {
+    border-radius: 30px !important;
+    min-height: 400px;
+}
+
+
+/* footer */
+
+.row_footer {
+    margin-left: -30px !important;
+    margin-right: -30px !important;
+}
+
+.row_footer img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    /*filter: brightness(0.8);*/
+}
+
+.about-us {
+    display: block;
+}
+
+.about-us-sm {
+    display: none;
+}
+
+.logo-footer {
+    text-align: center;
+}
+
+
+/* scroll to top */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #760909;
+    color: white;
+    cursor: pointer;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: #9d3d00;
+}
+
+/* single annunci */
+
+p.field.tour_day_schedule {
+    white-space: pre-line;
+}
+
+.single_pacchetti_img {
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.indicators_pacchetti {
+    position: relative !important;
+}
+
+.indicators_pacchetti li.carousel-indicator {
+    width: 50px;
+    height: 50px
+}
+
+img.thumb_pacchetti_indicators {
+    height: 50px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.type-pacchetti {
+    margin-top: 20px;
+}
+
+.col-12.titolo_pacchetto {
+    color: #223788;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.col-12.head_descrizione {
+    color: #B77715;
+    letter-spacing: 1px;
+
+}
+
+.col-12.head_descrizione p {
+    margin-top: 30px;
+}
+
+.col-12.pacchetto_descrizione p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.row.row_info {
+    width: 100% !important;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+}
+
+.info_aggiuntive {
+    font-size: 18px;
+}
+
+.info_aggiuntive i {
+    color: #b77715;
+
+}
+
+.agg {
+    font-weight: bold;
+    padding-left: 7px;
+    margin-left: 10px;
+}
+
+.info_vino {
+    margin-bottom: 10px;
+}
+
+
+.line {
+    border-top-width: 1px !important;
+    border-top-style: solid !important;
+    border-top-color: rgb(221, 221, 221);
+    padding: 10px;
+}
+
+
+/* responsive */
+
+@media screen and (max-width: 600px) {
+
+    #masthead .navbar-nav > li.current-menu-item > a.nav-link {
+        border-bottom: none !important;
+    }
+
+    .row_reverse {
+        flex-direction: column-reverse;
+    }
+
+    .top-centered {
+        text-align: center;
+        transform: translate(-59%, -125%);
+    }
+
+    .top-centered h1 {
+        font-family: "Roboto Condensed";
+        font-size: 35px;
+        color: #B77715;
+
+    }
+
+    .top-centered h2 {
+        display: none;
+    }
+
+    .carousel-item.active {
+        background-image: url(images/banner-sm-3.png);
+        background-size: cover;
+        background-position: center;
+        height: 550px;
+    }
+
+    .row_introduction img {
+
+        object-position: left;
+        /* filter: brightness(0.8);*/
+    }
+
+
+    .contatti_gravity, .progetta_gravity {
+        max-height: 100% !important;
+        border-radius: 20px !important;
+    }
+
+    .google_map_contatti iframe {
+        border-radius: 20px !important;
+    }
+
+    .btn_val {
+        width: 30%;
+    }
+
+    #myBtn {
+        bottom: 160px !important;
+        right: 15px !important;
+    }
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative
+    }
+
+    .row_lista-vini {
+        justify-content: center;
+    }
+
+    .row_lista-vini.row-bianchi {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .row-vigneti h1 {
+        margin-left: 50px;
+    }
+
+    .bg-packaging {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    .vini-rossi h4 {
+        text-align: start;
+    }
+
+    .vini-rossi li {
+        text-align: start;
+    }
+
+    .vini-rossi li:before {
+        left: 0;
+        margin-left: -45px;
+    }
+
+    .vini-rossi img {
+        transform: rotate(180deg);
+    }
+
+
+    .vini-bianchi li {
+        text-align: start;
+        margin-left: 35px;
+    }
+
+    .vini-bianchi li:before {
+        margin-left: -48px;
+    }
+
+
+    .vini-rosati h4 {
+        text-align: start;
+    }
+
+    .vini-rosati li {
+        text-align: start;
+    }
+
+    .vini-rosati li:before {
+        left: 0;
+        margin-left: -45px;
+    }
+
+    .vini-rosati img {
+        transform: rotate(180deg);
+    }
+
+    .img-circle {
+        width: 300px;
+        height: 300px;
+    }
+
+    .about-us {
+        display: none;
+    }
+
+    .about-us-sm {
+        display: block;
+    }
+
+    .logo-footer {
+        text-align: initial;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .search-sec {
+        position: relative;
+        top: -114px;
+        background: rgba(26, 70, 104, 0.51);
+    }
+}
+
+@media (max-width: 992px) {
+    .header_vini img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        filter: brightness(0.7);
+
+    }
+
+    .header_storia img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        filter: brightness(0.7);
+
+    }
+
+    .header_contatti img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        filter: brightness(0.7);
+
+    }
+
+    .row-vigneti {
+        flex-direction: column-reverse;
+    }
+}
+
+
